@@ -1,0 +1,21 @@
+body {
+    background-color: cornflowerblue; /* Ændrer baggrundsfarven til cornflowerblue */
+    color: white; /* Gør teksten hvid for bedre kontrast */
+    font-family: Arial, sans-serif; /* Vælger en sans-serif skrifttype */
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.album {
+    flex: 1 1 calc(50% - 20px); /* Optager 50% bredde minus gap */
+    box-sizing: border-box; /* Inkluderer padding/border i bredden */
+    padding: 10px; /* Lidt padding inde i albummerne */
+    background-color: rgba(255, 255, 255, 0.1); /* Let transparent baggrund for albummerne */
+    border-radius: 8px; /* Runde hjørner */
+}
+.skjul { display: none; }
+.album { margin-bottom: 20px; }
+.album h2 { font-size: 1.5em; }
+.tracklist { padding: 10px; }
